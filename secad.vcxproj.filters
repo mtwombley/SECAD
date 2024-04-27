@@ -1,0 +1,1056 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="lrelease">
+      <UniqueIdentifier>{E0D8C965-CC5F-43d7-AD63-FAEF0BBC0F85}-lrelease</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="lrelease">
+      <UniqueIdentifier>{E0D8C965-CC5F-43d7-AD63-FAEF0BBC0F85}-lrelease</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\group.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_aboutdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_arraydialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_blenderpreferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_bricklink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_category.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_categorydialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_collapsiblewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_colorlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_colorpicker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_colors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_commands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_edgecolordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_findreplacewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_glextensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_groupdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_http.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_instructions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_instructionsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_keyframewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_library.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_lxf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_meshloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_minifigdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_modellistdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_objectproperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_pagesetupdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_partpalettedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_partselectionwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_previewwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_profile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_propertieswidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qeditgroupsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qhtmldialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qimagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qpreferencesdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qpropertiesdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qselectdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qupdatedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_qutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_renderdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\lc_setsdatabasedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_shortcuts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_stringcache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_synth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_timelinewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_viewmanipulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_viewsphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_viewwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\lc_zipfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\minifig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\piece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\pieceinf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\project.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\qtmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qt\system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\texfont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\group.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_aboutdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_application.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_arraydialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_blenderpreferences.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_bricklink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_category.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_categorydialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_collapsiblewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_colorlist.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_colorpicker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_colors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_commands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_edgecolordialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_findreplacewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_glextensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_groupdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_http.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_instructions.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_instructionsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_keyframewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_library.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_lxf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_meshloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_minifigdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_modellistdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_objectproperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_pagesetupdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_partpalettedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_partselectionwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_previewwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_propertieswidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qeditgroupsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qhtmldialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qimagedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qpreferencesdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qpropertiesdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qselectdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qupdatedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_qutils.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qt\lc_renderdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="qt\lc_setsdatabasedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_shortcuts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_stringcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_synth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_timelinewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="common\lc_view.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_viewmanipulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lc_viewsphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="common\lc_viewwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="common\lc_zipfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\minifig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\piece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pieceinf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\project.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\texfont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\debug\.moc\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\release\.moc\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="common\lc_aboutdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="common\lc_arraydialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="common\lc_categorydialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="common\lc_groupdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="common\lc_minifigdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="common\lc_modellistdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="common\lc_pagesetupdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="common\lc_partpalettedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_qeditgroupsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_qhtmldialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_qimagedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_qpreferencesdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_qpropertiesdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_qselectdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_qupdatedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_renderdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="qt\lc_setsdatabasedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\action_arealight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_arealight_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_camera.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_color_picker.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_color_picker_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_delete_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_insert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_insert_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_light.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_light_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_move.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_move_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_paint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_paint_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_pan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_pan_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_preview_locked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_preview_unlocked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_previous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_roll.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_rotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_rotate_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_rotate_view.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_select.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_select_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_spotlight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_spotlight_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_sunlight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_sunlight_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_zoom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_zoom_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_zoom_extents.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\action_zoom_region.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\archive.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\stylesheet\branch_closed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\stylesheet\branch_end.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\stylesheet\branch_more.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\stylesheet\branch_open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\stylesheet\branch_vline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\case.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\stylesheet\close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_arealight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_camera.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_color_picker.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_insert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_light.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_move.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_paint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_pan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_roll.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_rotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_rotate_view.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_rotatex.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_rotatey.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_select.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_select_add.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_select_remove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_spotlight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_sunlight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_zoom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\cursor_zoom_region.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_copy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_copy_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_cut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_cut_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_find.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_find_all.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_find_next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_find_previous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_paste.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_paste_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_redo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_redo_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_replace_all.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_replace_next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_snap_angle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_snap_move.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_transform_absolute_rotation.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_transform_absolute_translation.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_transform_relative.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_transform_relative_rotation.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_transform_relative_translation.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_undo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\edit_undo_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\fakelit_color_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\fakelit_color_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\fakelit_texture_decal_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\fakelit_texture_decal_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_new.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_new_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_open_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_picture.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_print.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_print_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_print_preview.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_print_preview_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_render_blender.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_render_blender_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_render_blender_logo_1280x720.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_render_open_in_blender.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_render_open_in_blender_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_render_povray.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_render_povray_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\file_save_16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\filter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\flexible.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\gear_in.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\help_homepage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\ldconfig.ldr">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\ldraw.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\ldraw2bl.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\library.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\minifig.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts_cancel.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts_search.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\piece_show_earlier.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\piece_show_later.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tools\icon\64x64\apps\secad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="secad.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\secad_cs.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\secad_de.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\secad_es.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\secad_fr.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\secad_pt.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\secad_uk.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\studlogo1.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\studlogo2.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\studlogo3.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\studlogo4.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\studlogo5.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\studslegostyle1.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\studslegostyle2.zip">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="resources\stylesheet\stylesheet.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\stylesheet\stylesheet.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\time_add_keys.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\time_first.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\time_last.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\time_next.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\time_previous.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\time_stop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\stylesheet\undock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_color_conditional_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_color_conditional_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_color_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_color_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_texture_decal_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_texture_decal_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_texture_modulate_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_texture_modulate_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_vertex_color_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_vertex_color_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_view_sphere_ps.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\shaders\unlit_view_sphere_vs.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\view_split_horizontal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\view_split_vertical.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\view_zoomextents.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="resources\secad_cs.ts">
+      <Filter>lrelease</Filter>
+    </QtTranslation>
+    <QtTranslation Include="resources\secad_de.ts">
+      <Filter>lrelease</Filter>
+    </QtTranslation>
+    <QtTranslation Include="resources\secad_es.ts">
+      <Filter>lrelease</Filter>
+    </QtTranslation>
+    <QtTranslation Include="resources\secad_fr.ts">
+      <Filter>lrelease</Filter>
+    </QtTranslation>
+    <QtTranslation Include="resources\secad_pt.ts">
+      <Filter>lrelease</Filter>
+    </QtTranslation>
+    <QtTranslation Include="resources\secad_uk.ts">
+      <Filter>lrelease</Filter>
+    </QtTranslation>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="X:\source\SECAD\SECAD_resource.rc" />
+  </ItemGroup>
+</Project>

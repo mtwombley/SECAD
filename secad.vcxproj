@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F8B4C77-4201-30C0-B77A-AB3D33474A02}</ProjectGuid>
+    <RootNamespace>SECAD</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>build\release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>build\release\.obj\</IntermediateDirectory>
+    <PrimaryOutput>SECAD</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>build\debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>build\debug\.obj\</IntermediateDirectory>
+    <PrimaryOutput>SECAD</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QtInstall>5.15.0_msvc2019_64</QtInstall>
+    <QtModules>core;xml;opengl;network;gui;widgets;printsupport;concurrent;gamepad</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QtInstall>5.15.0_msvc2019_64</QtInstall>
+    <QtModules>core;xml;opengl;network;gui;widgets;printsupport;concurrent;gamepad</QtModules>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">build\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">build\release\.obj\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SECAD</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">build\debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">build\debug\.obj\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SECAD</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;qt;common;build\release\.moc;build\release\.ui;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>build\release\.obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>common\lc_global.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>build\release\.obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>common\lc_global.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)\SECAD.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;LC_ENABLE_GAMEPAD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=1;_CRT_NONSTDC_NO_WARNINGS=1;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wininet.lib;advapi32.lib;shell32.lib;opengl32.lib;user32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\SECAD.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>23.3</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;LC_ENABLE_GAMEPAD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=1;_CRT_NONSTDC_NO_WARNINGS=1;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./build/$(Configuration)/.moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>build\$(Configuration)\.moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>build\$(Configuration)\.qrc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>build\$(Configuration)\.ui</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+    <QtTranslation>
+      <ReleaseSilent>true</ReleaseSilent>
+      <QmOutputFile>resources/%(Filename).qm</QmOutputFile>
+      <ReleaseDescription>lrelease %(Identity)</ReleaseDescription>
+      <BuildAction>lrelease</BuildAction>
+      <InputFile>%(FullPath)</InputFile>
+    </QtTranslation>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;qt;common;build\debug\.moc;build\debug\.ui;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>build\debug\.obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>common\lc_global.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>build\debug\.obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>common\lc_global.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)\SECAD.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;LC_ENABLE_GAMEPAD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=1;_CRT_NONSTDC_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>wininet.lib;advapi32.lib;shell32.lib;opengl32.lib;user32.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openssl\lib;C:\Utils\my_sql\mysql-5.7.25-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <OutputFile>$(OutDir)\SECAD.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>23.3</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;LC_ENABLE_GAMEPAD;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE=1;_CRT_NONSTDC_NO_WARNINGS=1;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./build/$(Configuration)/.moc/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>build\$(Configuration)\.moc</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>build\$(Configuration)\.qrc</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>build\$(Configuration)\.ui</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+    <QtTranslation>
+      <QmOutputFile>resources/%(Filename).qm</QmOutputFile>
+      <ReleaseSilent>true</ReleaseSilent>
+      <ReleaseDescription>lrelease %(Identity)</ReleaseDescription>
+      <BuildAction>lrelease</BuildAction>
+      <InputFile>%(FullPath)</InputFile>
+    </QtTranslation>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="common\camera.cpp" />
+    <ClCompile Include="common\group.cpp" />
+    <ClCompile Include="common\image.cpp" />
+    <ClCompile Include="common\lc_aboutdialog.cpp" />
+    <ClCompile Include="common\lc_application.cpp" />
+    <ClCompile Include="common\lc_arraydialog.cpp" />
+    <ClCompile Include="common\lc_blenderpreferences.cpp" />
+    <ClCompile Include="common\lc_bricklink.cpp" />
+    <ClCompile Include="common\lc_category.cpp" />
+    <ClCompile Include="common\lc_categorydialog.cpp" />
+    <ClCompile Include="common\lc_collapsiblewidget.cpp" />
+    <ClCompile Include="common\lc_colorlist.cpp" />
+    <ClCompile Include="common\lc_colorpicker.cpp" />
+    <ClCompile Include="common\lc_colors.cpp" />
+    <ClCompile Include="common\lc_commands.cpp" />
+    <ClCompile Include="common\lc_context.cpp" />
+    <ClCompile Include="common\lc_edgecolordialog.cpp" />
+    <ClCompile Include="common\lc_file.cpp" />
+    <ClCompile Include="common\lc_findreplacewidget.cpp" />
+    <ClCompile Include="common\lc_glextensions.cpp" />
+    <ClCompile Include="common\lc_global.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(NOINHERIT)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(NOINHERIT)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="common\lc_groupdialog.cpp" />
+    <ClCompile Include="common\lc_http.cpp" />
+    <ClCompile Include="common\lc_instructions.cpp" />
+    <ClCompile Include="common\lc_instructionsdialog.cpp" />
+    <ClCompile Include="common\lc_keyframewidget.cpp" />
+    <ClCompile Include="common\lc_library.cpp" />
+    <ClCompile Include="common\lc_lxf.cpp" />
+    <ClCompile Include="common\lc_mainwindow.cpp" />
+    <ClCompile Include="common\lc_mesh.cpp" />
+    <ClCompile Include="common\lc_meshloader.cpp" />
+    <ClCompile Include="common\lc_minifigdialog.cpp" />
+    <ClCompile Include="common\lc_model.cpp" />
+    <ClCompile Include="common\lc_modellistdialog.cpp" />
+    <ClCompile Include="common\lc_objectproperty.cpp" />
+    <ClCompile Include="common\lc_pagesetupdialog.cpp" />
+    <ClCompile Include="common\lc_partpalettedialog.cpp" />
+    <ClCompile Include="common\lc_partselectionwidget.cpp" />
+    <ClCompile Include="common\lc_previewwidget.cpp" />
+    <ClCompile Include="common\lc_profile.cpp" />
+    <ClCompile Include="common\lc_propertieswidget.cpp" />
+    <ClCompile Include="qt\lc_qeditgroupsdialog.cpp" />
+    <ClCompile Include="qt\lc_qhtmldialog.cpp" />
+    <ClCompile Include="qt\lc_qimagedialog.cpp" />
+    <ClCompile Include="qt\lc_qpreferencesdialog.cpp" />
+    <ClCompile Include="qt\lc_qpropertiesdialog.cpp" />
+    <ClCompile Include="qt\lc_qselectdialog.cpp" />
+    <ClCompile Include="qt\lc_qupdatedialog.cpp" />
+    <ClCompile Include="qt\lc_qutils.cpp" />
+    <ClCompile Include="qt\lc_renderdialog.cpp" />
+    <ClCompile Include="common\lc_scene.cpp" />
+    <ClCompile Include="qt\lc_setsdatabasedialog.cpp" />
+    <ClCompile Include="common\lc_shortcuts.cpp" />
+    <ClCompile Include="common\lc_stringcache.cpp" />
+    <ClCompile Include="common\lc_synth.cpp" />
+    <ClCompile Include="common\lc_texture.cpp" />
+    <ClCompile Include="common\lc_timelinewidget.cpp" />
+    <ClCompile Include="common\lc_view.cpp" />
+    <ClCompile Include="common\lc_viewmanipulator.cpp" />
+    <ClCompile Include="common\lc_viewsphere.cpp" />
+    <ClCompile Include="common\lc_viewwidget.cpp" />
+    <ClCompile Include="common\lc_zipfile.cpp" />
+    <ClCompile Include="common\light.cpp" />
+    <ClCompile Include="common\minifig.cpp" />
+    <ClCompile Include="common\object.cpp" />
+    <ClCompile Include="common\piece.cpp" />
+    <ClCompile Include="common\pieceinf.cpp" />
+    <ClCompile Include="common\project.cpp" />
+    <ClCompile Include="qt\qtmain.cpp" />
+    <ClCompile Include="qt\system.cpp" />
+    <ClCompile Include="common\texfont.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\camera.h" />
+    <ClInclude Include="common\group.h" />
+    <ClInclude Include="common\image.h" />
+    <QtMoc Include="common\lc_aboutdialog.h" />
+    <QtMoc Include="common\lc_application.h" />
+    <ClInclude Include="common\lc_array.h" />
+    <QtMoc Include="common\lc_arraydialog.h" />
+    <QtMoc Include="common\lc_blenderpreferences.h" />
+    <ClInclude Include="common\lc_bricklink.h" />
+    <ClInclude Include="common\lc_category.h" />
+    <QtMoc Include="common\lc_categorydialog.h" />
+    <QtMoc Include="common\lc_collapsiblewidget.h" />
+    <QtMoc Include="common\lc_colorlist.h" />
+    <QtMoc Include="common\lc_colorpicker.h" />
+    <ClInclude Include="common\lc_colors.h" />
+    <ClInclude Include="common\lc_commands.h" />
+    <ClInclude Include="common\lc_context.h" />
+    <QtMoc Include="common\lc_edgecolordialog.h" />
+    <ClInclude Include="common\lc_file.h" />
+    <QtMoc Include="common\lc_findreplacewidget.h" />
+    <ClInclude Include="common\lc_glextensions.h" />
+    <ClInclude Include="common\lc_global.h" />
+    <QtMoc Include="common\lc_groupdialog.h" />
+    <QtMoc Include="common\lc_http.h" />
+    <QtMoc Include="common\lc_instructions.h" />
+    <QtMoc Include="common\lc_instructionsdialog.h" />
+    <QtMoc Include="common\lc_keyframewidget.h" />
+    <QtMoc Include="common\lc_library.h" />
+    <ClInclude Include="common\lc_lxf.h" />
+    <QtMoc Include="common\lc_mainwindow.h" />
+    <ClInclude Include="common\lc_math.h" />
+    <ClInclude Include="common\lc_mesh.h" />
+    <ClInclude Include="common\lc_meshloader.h" />
+    <QtMoc Include="common\lc_minifigdialog.h" />
+    <ClInclude Include="common\lc_model.h" />
+    <QtMoc Include="common\lc_modellistdialog.h" />
+    <ClInclude Include="common\lc_objectproperty.h" />
+    <QtMoc Include="common\lc_pagesetupdialog.h" />
+    <QtMoc Include="common\lc_partpalettedialog.h" />
+    <QtMoc Include="common\lc_partselectionwidget.h" />
+    <QtMoc Include="common\lc_previewwidget.h" />
+    <ClInclude Include="common\lc_profile.h" />
+    <QtMoc Include="common\lc_propertieswidget.h" />
+    <QtMoc Include="qt\lc_qeditgroupsdialog.h" />
+    <QtMoc Include="qt\lc_qhtmldialog.h" />
+    <QtMoc Include="qt\lc_qimagedialog.h" />
+    <QtMoc Include="qt\lc_qpreferencesdialog.h" />
+    <QtMoc Include="qt\lc_qpropertiesdialog.h" />
+    <QtMoc Include="qt\lc_qselectdialog.h" />
+    <QtMoc Include="qt\lc_qupdatedialog.h" />
+    <QtMoc Include="qt\lc_qutils.h" />
+    <QtMoc Include="qt\lc_renderdialog.h" />
+    <ClInclude Include="common\lc_scene.h" />
+    <QtMoc Include="qt\lc_setsdatabasedialog.h" />
+    <ClInclude Include="common\lc_shortcuts.h" />
+    <ClInclude Include="common\lc_stringcache.h" />
+    <ClInclude Include="common\lc_synth.h" />
+    <ClInclude Include="common\lc_texture.h" />
+    <QtMoc Include="common\lc_timelinewidget.h" />
+    <QtMoc Include="common\lc_view.h" />
+    <ClInclude Include="common\lc_viewmanipulator.h" />
+    <ClInclude Include="common\lc_viewsphere.h" />
+    <QtMoc Include="common\lc_viewwidget.h" />
+    <ClInclude Include="common\lc_zipfile.h" />
+    <ClInclude Include="common\light.h" />
+    <ClInclude Include="common\minifig.h" />
+    <ClInclude Include="common\object.h" />
+    <ClInclude Include="common\piece.h" />
+    <ClInclude Include="common\pieceinf.h" />
+    <ClInclude Include="common\project.h" />
+    <ClInclude Include="common\texfont.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\debug\.moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /MP -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 /W4 -wd4100 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;build\$(IntDir)\.moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">build\$(IntDir)\.moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="build\release\.moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /MP -O2 -Zi -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 /W4 -wd4100 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;build\$(IntDir)\.moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">build\$(IntDir)\.moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="common\lc_aboutdialog.ui" />
+    <QtUic Include="common\lc_arraydialog.ui" />
+    <QtUic Include="common\lc_categorydialog.ui" />
+    <QtUic Include="common\lc_groupdialog.ui" />
+    <QtUic Include="common\lc_minifigdialog.ui" />
+    <QtUic Include="common\lc_modellistdialog.ui" />
+    <QtUic Include="common\lc_pagesetupdialog.ui" />
+    <QtUic Include="common\lc_partpalettedialog.ui" />
+    <QtUic Include="qt\lc_qeditgroupsdialog.ui" />
+    <QtUic Include="qt\lc_qhtmldialog.ui" />
+    <QtUic Include="qt\lc_qimagedialog.ui" />
+    <QtUic Include="qt\lc_qpreferencesdialog.ui" />
+    <QtUic Include="qt\lc_qpropertiesdialog.ui" />
+    <QtUic Include="qt\lc_qselectdialog.ui" />
+    <QtUic Include="qt\lc_qupdatedialog.ui" />
+    <QtUic Include="qt\lc_renderdialog.ui" />
+    <QtUic Include="qt\lc_setsdatabasedialog.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\action_arealight.png" />
+    <None Include="resources\action_arealight_16.png" />
+    <None Include="resources\action_camera.png" />
+    <None Include="resources\action_color_picker.png" />
+    <None Include="resources\action_color_picker_16.png" />
+    <None Include="resources\action_delete.png" />
+    <None Include="resources\action_delete_16.png" />
+    <None Include="resources\action_insert.png" />
+    <None Include="resources\action_insert_16.png" />
+    <None Include="resources\action_light.png" />
+    <None Include="resources\action_light_16.png" />
+    <None Include="resources\action_move.png" />
+    <None Include="resources\action_move_16.png" />
+    <None Include="resources\action_next.png" />
+    <None Include="resources\action_paint.png" />
+    <None Include="resources\action_paint_16.png" />
+    <None Include="resources\action_pan.png" />
+    <None Include="resources\action_pan_16.png" />
+    <None Include="resources\action_preview_locked.png" />
+    <None Include="resources\action_preview_unlocked.png" />
+    <None Include="resources\action_previous.png" />
+    <None Include="resources\action_roll.png" />
+    <None Include="resources\action_rotate.png" />
+    <None Include="resources\action_rotate_16.png" />
+    <None Include="resources\action_rotate_view.png" />
+    <None Include="resources\action_select.png" />
+    <None Include="resources\action_select_16.png" />
+    <None Include="resources\action_spotlight.png" />
+    <None Include="resources\action_spotlight_16.png" />
+    <None Include="resources\action_sunlight.png" />
+    <None Include="resources\action_sunlight_16.png" />
+    <None Include="resources\action_zoom.png" />
+    <None Include="resources\action_zoom_16.png" />
+    <None Include="resources\action_zoom_extents.png" />
+    <None Include="resources\action_zoom_region.png" />
+    <None Include="resources\archive.png" />
+    <None Include="resources\stylesheet\branch_closed.png" />
+    <None Include="resources\stylesheet\branch_end.png" />
+    <None Include="resources\stylesheet\branch_more.png" />
+    <None Include="resources\stylesheet\branch_open.png" />
+    <None Include="resources\stylesheet\branch_vline.png" />
+    <None Include="resources\case.png" />
+    <None Include="resources\stylesheet\close.png" />
+    <None Include="resources\cursor_arealight.png" />
+    <None Include="resources\cursor_camera.png" />
+    <None Include="resources\cursor_color_picker.png" />
+    <None Include="resources\cursor_delete.png" />
+    <None Include="resources\cursor_insert.png" />
+    <None Include="resources\cursor_light.png" />
+    <None Include="resources\cursor_move.png" />
+    <None Include="resources\cursor_paint.png" />
+    <None Include="resources\cursor_pan.png" />
+    <None Include="resources\cursor_roll.png" />
+    <None Include="resources\cursor_rotate.png" />
+    <None Include="resources\cursor_rotate_view.png" />
+    <None Include="resources\cursor_rotatex.png" />
+    <None Include="resources\cursor_rotatey.png" />
+    <None Include="resources\cursor_select.png" />
+    <None Include="resources\cursor_select_add.png" />
+    <None Include="resources\cursor_select_remove.png" />
+    <None Include="resources\cursor_spotlight.png" />
+    <None Include="resources\cursor_sunlight.png" />
+    <None Include="resources\cursor_zoom.png" />
+    <None Include="resources\cursor_zoom_region.png" />
+    <None Include="resources\edit_copy.png" />
+    <None Include="resources\edit_copy_16.png" />
+    <None Include="resources\edit_cut.png" />
+    <None Include="resources\edit_cut_16.png" />
+    <None Include="resources\edit_find.png" />
+    <None Include="resources\edit_find_all.png" />
+    <None Include="resources\edit_find_next.png" />
+    <None Include="resources\edit_find_previous.png" />
+    <None Include="resources\edit_paste.png" />
+    <None Include="resources\edit_paste_16.png" />
+    <None Include="resources\edit_redo.png" />
+    <None Include="resources\edit_redo_16.png" />
+    <None Include="resources\edit_replace_all.png" />
+    <None Include="resources\edit_replace_next.png" />
+    <None Include="resources\edit_snap_angle.png" />
+    <None Include="resources\edit_snap_move.png" />
+    <None Include="resources\edit_transform_absolute_rotation.png" />
+    <None Include="resources\edit_transform_absolute_translation.png" />
+    <None Include="resources\edit_transform_relative.png" />
+    <None Include="resources\edit_transform_relative_rotation.png" />
+    <None Include="resources\edit_transform_relative_translation.png" />
+    <None Include="resources\edit_undo.png" />
+    <None Include="resources\edit_undo_16.png" />
+    <None Include="resources\shaders\fakelit_color_ps.glsl" />
+    <None Include="resources\shaders\fakelit_color_vs.glsl" />
+    <None Include="resources\shaders\fakelit_texture_decal_ps.glsl" />
+    <None Include="resources\shaders\fakelit_texture_decal_vs.glsl" />
+    <None Include="resources\file_new.png" />
+    <None Include="resources\file_new_16.png" />
+    <None Include="resources\file_open.png" />
+    <None Include="resources\file_open_16.png" />
+    <None Include="resources\file_picture.png" />
+    <None Include="resources\file_print.png" />
+    <None Include="resources\file_print_16.png" />
+    <None Include="resources\file_print_preview.png" />
+    <None Include="resources\file_print_preview_16.png" />
+    <None Include="resources\file_render_blender.png" />
+    <None Include="resources\file_render_blender_16.png" />
+    <None Include="resources\file_render_blender_logo_1280x720.png" />
+    <None Include="resources\file_render_open_in_blender.png" />
+    <None Include="resources\file_render_open_in_blender_16.png" />
+    <None Include="resources\file_render_povray.png" />
+    <None Include="resources\file_render_povray_16.png" />
+    <None Include="resources\file_save.png" />
+    <None Include="resources\file_save_16.png" />
+    <None Include="resources\filter.png" />
+    <None Include="resources\flexible.png" />
+    <None Include="resources\gear_in.png" />
+    <None Include="resources\help_homepage.png" />
+    <None Include="resources\ldconfig.ldr" />
+    <None Include="resources\ldraw.xml" />
+    <None Include="resources\ldraw2bl.txt" />
+    <None Include="resources\library.zip" />
+    <None Include="resources\minifig.ini" />
+    <None Include="resources\parts_cancel.png" />
+    <None Include="resources\parts_search.png" />
+    <None Include="resources\piece_show_earlier.png" />
+    <None Include="resources\piece_show_later.png" />
+    <None Include="tools\icon\64x64\apps\secad.png" />
+    <QtRcc Include="secad.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">secad</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">secad</InitFuncName>
+    </QtRcc>
+    <None Include="resources\secad_cs.qm" />
+    <None Include="resources\secad_de.qm" />
+    <None Include="resources\secad_es.qm" />
+    <None Include="resources\secad_fr.qm" />
+    <None Include="resources\secad_pt.qm" />
+    <None Include="resources\secad_uk.qm" />
+    <None Include="resources\studlogo1.zip" />
+    <None Include="resources\studlogo2.zip" />
+    <None Include="resources\studlogo3.zip" />
+    <None Include="resources\studlogo4.zip" />
+    <None Include="resources\studlogo5.zip" />
+    <None Include="resources\studslegostyle1.zip" />
+    <None Include="resources\studslegostyle2.zip" />
+    <QtRcc Include="resources\stylesheet\stylesheet.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stylesheet</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stylesheet</InitFuncName>
+    </QtRcc>
+    <None Include="resources\stylesheet\stylesheet.qss" />
+    <None Include="resources\time_add_keys.png" />
+    <None Include="resources\time_first.png" />
+    <None Include="resources\time_last.png" />
+    <None Include="resources\time_next.png" />
+    <None Include="resources\time_previous.png" />
+    <None Include="resources\time_stop.png" />
+    <None Include="resources\stylesheet\undock.png" />
+    <None Include="resources\shaders\unlit_color_conditional_ps.glsl" />
+    <None Include="resources\shaders\unlit_color_conditional_vs.glsl" />
+    <None Include="resources\shaders\unlit_color_ps.glsl" />
+    <None Include="resources\shaders\unlit_color_vs.glsl" />
+    <None Include="resources\shaders\unlit_texture_decal_ps.glsl" />
+    <None Include="resources\shaders\unlit_texture_decal_vs.glsl" />
+    <None Include="resources\shaders\unlit_texture_modulate_ps.glsl" />
+    <None Include="resources\shaders\unlit_texture_modulate_vs.glsl" />
+    <None Include="resources\shaders\unlit_vertex_color_ps.glsl" />
+    <None Include="resources\shaders\unlit_vertex_color_vs.glsl" />
+    <None Include="resources\shaders\unlit_view_sphere_ps.glsl" />
+    <None Include="resources\shaders\unlit_view_sphere_vs.glsl" />
+    <None Include="resources\view_split_horizontal.png" />
+    <None Include="resources\view_split_vertical.png" />
+    <None Include="resources\view_zoomextents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtTranslation Include="resources\secad_cs.ts" />
+    <QtTranslation Include="resources\secad_de.ts" />
+    <QtTranslation Include="resources\secad_es.ts" />
+    <QtTranslation Include="resources\secad_fr.ts" />
+    <QtTranslation Include="resources\secad_pt.ts" />
+    <QtTranslation Include="resources\secad_uk.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\SECAD_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

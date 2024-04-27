@@ -1,0 +1,41 @@
+name: secad
+base: core18
+adopt-info: secad
+version: '23.03'
+
+grade: stable
+confinement: strict
+
+apps:
+  secad:
+    common-id: org.secad.SECAD
+    command: secad
+    plugs:
+      - home
+      - opengl
+      - network
+    extensions:
+      - kde-neon
+
+parts:
+  secad:
+    plugin: qmake
+    build-packages:
+      - qtbase5-dev
+      - qttools5-dev-tools
+      - libqt5opengl5-dev
+      - zlib1g-dev
+    stage-packages:
+      - libqt5opengl5
+      - libqt5gui5
+      - libqt5concurrent5
+      - libqt5printsupport5
+      - libqt5xml5
+    source: https://github.com/sezide/secad/archive/v23.03.tar.gz
+    parse-info: [usr/share/metainfo/secad.appdata.xml]
+  library:
+    source: .
+    plugin: dump
+    override-build: |
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/secad
+      cp library.bin $SNAPCRAFT_PART_INSTALL/usr/share/secad/library.bin
