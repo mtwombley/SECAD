@@ -109,13 +109,13 @@ public:
 
 	float GetMoveXYSnap() const
 	{
-		const float SnapXYTable[] = { 0.0f, 1.0f, 5.0f, 8.0f, 10.0f, 20.0f, 40.0f, 60.0f, 80.0f, 160.0f };
+		const float SnapXYTable[] = { 0.0f, 1.0f, 5.0f, 10.0f, 20.0f, 30.0f, 40.0f, 60.0f, 80.0f, 160.0f };
 		return mMoveSnapEnabled ? SnapXYTable[mMoveXYSnapIndex] : 0.0f;
 	}
 
 	float GetMoveZSnap() const
 	{
-		const float SnapZTable[] = { 0.0f, 1.0f, 5.0f, 8.0f, 10.0f, 20.0f, 24.0f, 48.0f, 96.0f, 192.0f };
+		const float SnapZTable[] = { 0.0f, 1.0f, 5.0f, 10.0f, 20.0f, 30.0f, 40.0f, 60.0f, 80.0f, 160.0f };
 		return mMoveSnapEnabled ? SnapZTable[mMoveZSnapIndex] : 0.0f;
 	}
 

@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.qmake.stash
+*.qm
+/build/Desktop_Qt_5_15_0_MSVC2019_64bit-Debug/.qtc_clangd
+/build/Desktop_Qt_5_15_0_MSVC2019_64bit-Debug/Makefile
+/build/Desktop_Qt_5_15_0_MSVC2019_64bit-Debug/Makefile.Debug
+/build/Desktop_Qt_5_15_0_MSVC2019_64bit-Debug/Makefile.Release
+/build/Desktop_Qt_5_15_0_MSVC2019_64bit-Debug/SECAD_resource.rc
